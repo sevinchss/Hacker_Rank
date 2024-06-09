@@ -1,0 +1,19 @@
+.btn {
+  padding: 15px 45px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #068932;
+  border: 1px solid #068932;
+  color: white;
+  min-width: 155px;
+}
+.transparent {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.white {
+  color: white;
+  border-color: white;
+}

@@ -1,0 +1,115 @@
+.body {
+  padding: 80px 0;
+  background-color: #f7fcff;
+}
+
+.body > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 680px;
+
+  text-align: center;
+}
+.body > div p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #576871;
+}
+.locations {
+  display: flex;
+  margin: 50px 0;
+  gap: 160px;
+  justify-content: center;
+}
+.locations a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #39424e;
+}
+.locations a:hover {
+  text-decoration: underline;
+}
+.skills {
+  background: #111621;
+  border-radius: 8px;
+  color: #f5f4f3;
+  font-size: 18px;
+  padding: 32px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.skills img {
+  width: 100%;
+  height: 100%;
+}
+.skills_left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+  justify-content: center;
+}
+.skills p {
+  line-height: 30px;
+  color: #f5f4f3;
+  font-weight: 100;
+}
+.skills button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 6px;
+}
+.compare {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.movement {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  flex-direction: column;
+  h2 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 800px) {
+  .body .skills {
+    grid-template-columns: 1fr;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.interviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.interviews p {
+  width: 70%;
+  color: #576871;
+  line-height: 30px;
+  font-weight: 100;
+}
+@media (max-width: 600px) {
+  .locations {
+    gap: 70px;
+  }
+  .body h2 {
+    font-size: 30px;
+  }
+}

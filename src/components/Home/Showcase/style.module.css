@@ -1,0 +1,83 @@
+.body {
+  position: relative;
+  overflow: hidden;
+  gap: 30px;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 60px 0;
+}
+.body > div {
+  margin: 0 auto;
+  max-width: 780px;   
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  gap: 30px;
+}
+.body h1 {
+  font-weight: 900;
+  font-size: 64px;
+  color: #1f1f20;
+}
+.body p {
+  font-weight: 300;
+  color: #39424e;
+  font-size: 18px;
+}
+.body:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #6e6bfe;
+  border-radius: 50%;
+  box-shadow: 0 0 1000px 350px #6e6bfe;
+  z-index: -1;
+  right: 0;
+  top: 100%;
+  transform: translate(-80%, -80%);
+  opacity: 0.2;
+}
+.body:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #1ba94c;
+  border-radius: 50%;
+  box-shadow: 0 0 1000px 350px #1ba94c;
+  z-index: -1;
+  left: 0;
+  top: 100%;
+  transform: translate(80%, -80%);
+  opacity: 0.2;
+}
+
+.users {
+  width: 120%;
+}
+.users img {
+  width: 110px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+@media (max-width: 500px) {
+  .body h1 {
+    font-size: 28px;
+  }
+  .body > div {
+    width: 95%;
+  }
+  .body .users {
+    width: 90%;
+  }
+}
